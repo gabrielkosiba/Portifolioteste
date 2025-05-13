@@ -1,0 +1,273 @@
+/* Estilo Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0); 
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Estilho Cabeçalho*/
+header{
+    padding: 20px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 16px;
+}
+
+
+
+header a:hover{
+    color: white;
+    transform: scale(1.20);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+
+/* BARRA DE NAVEGAÇÃO */
+header nav ul li{
+    display: inline-block;
+    padding: 0 65px;
+
+}
+
+
+/* CONFIGURAÇÃO DO BOTÃO*/
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(53, 96, 190);
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* BORDA DO BOTÃO */
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px lab(49.43% -1.41 -41.65);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TIPO DO SITE */
+
+/* ESTILO DO H1 */
+.topo-do-site h1{
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+    padding-top: 120px;
+    word-wrap: break-word;
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ESTILO DO PONTO */
+.topo-do-site span{
+    color: hwb(208 18% 13%);
+    font-size: 40px;
+}
+
+/* TEXTO PRINCIPAL */
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 2.0; /* ou outro valor maior que 1 */
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* IMAGEM */
+.img-topo-site img{
+    justify-content: right;
+    align-items: right;
+    padding-left: 10px;
+    padding-top: 100px;
+}
+
+/* ANIMAÇÃO DA IMAGEM 1*/
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 300px;
+    align-items: right;
+    justify-content: right;
+}
+
+/* ANIMAÇÃO DA IMAGEM 2*/
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/* TAMANHO DA LOGO */
+.Logo1{    
+    width: 130px;
+    align-items: center;
+    transition: 2.5s;
+
+}
+
+
+
+/* PARTE DOIS DO SITE, "SOBRE*/
+
+strong{
+    color: rgb(62, 152, 255)
+}
+
+.eu{
+    color:#fff; 
+    font-size: 18px;
+    font-family: tahoma
+}
+
+.eu2{
+    margin-top: 10px;
+    margin-right: 20%;
+    line-height: 1.2;
+}
+
+.descricao1{
+    margin-top: 20px;
+    margin-right: 20%;
+}
+
+
+.descricao2{
+    margin-right: 20%;
+}
+
+/* PARTE TRES DO SITE, "ESPECIALIDADE*/
+
+.itens{
+    color: #fff;
+    font-size:large;
+    line-height: 2;
+    padding: 25px 25px;
+    font-size: 18px;
+}
+
+.esp{
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 25px 25px;
+}
+
+
+
+
+
+/* CONTATO */
+
+.botoes{
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #1f3c88;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(27, 99, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn i {
+    font-size: 40px;
+  }
+  
+  .btn:hover {
+    background-color: #234ab8;
+    transform: translateY(-6px);
+  }
+  
+
+
+  /* ABA DE PROJETOS*/
+
+  .projeto{
+    color: #fff;
+  }
+
+.texto-projeto{
+    font-size: 30x;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+  .projeto1{
+    .img-projeto {
+        width: 400px;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px; /* borda */
+        box-shadow: 0 1px 100px rgba(0, 0, 0, 0.1); /* opcional */
+    }
+}
+
+.img-projeto {
+    width: 3000px;
+    height: auto;
+    max-width: 100%;
+    padding-top: 80px;
+    margin-right: 60px;
+}
+
+.img-projeto1{
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    padding-top: 80px;
+    border-radius: 10px; /*borda*/
+}
